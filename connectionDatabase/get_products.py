@@ -14,8 +14,4 @@ def get_products(type):
     cur.close()
     conn.close()
 
-    ls = []
-    for row in rows:
-        for i in row:
-            ls.append(i)
-    return ls
+    return rows
